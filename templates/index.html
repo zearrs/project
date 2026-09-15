@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mahkota Technology </title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<header class="site-header" id="top">
+  <div class="header-inner">
+    <a href="#top" class="brand">
+      <span class="brand-mark">&gt;_</span>
+      <span class="brand-name">MAHKOTA<span class="brand-dot"> </span>TECHNOLOGY</span>
+    </a>
+
+    <nav class="navbar" id="navbar">
+      <a href="#home" class="nav-link active" data-section="home">Home</a>
+      <a href="#about" class="nav-link" data-section="about">About</a>
+      <a href="#layanan" class="nav-link" data-section="layanan">Layanan</a> 
+      <a href="#galery" class="nav-link" data-section="galery">Galery</a>
+      <a href="#contact-person" class="nav-link" data-section="contact-person">Contact Person</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Buka menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- HOME / HERO -->
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">IT Solution Bagi Anda</p>
+        <h1>Kami membangun sistem yang membuat bisnis Anda berjalan lebih cepat.</h1>
+        <p class="hero-desc">
+          Mahkota Technology merancang, membangun, dan merawat infrastruktur digital —
+          dari aplikasi internal, sistem backend, jaringan, hingga keamanan data —
+          untuk perusahaan yang ingin bertumbuh tanpa hambatan teknis.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact-person" class="btn btn-primary">Kontak kami</a>
+          <a href="#about" class="btn btn-ghost">Layanan kami</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="terminal">
+          <div class="terminal-bar">
+            <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+          </div>
+          <div class="terminal-body" id="terminalBody"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+<section class="about" id="about">
+  <div class="section-inner">
+    <p class="section-label">About Us</p>
+
+    <div class="about-content">
+      <div class="about-text">
+        <h2>Sejarah Singkat</h2>
+        <p class="section-lead">
+          Mahkota Technology adalah Perusahaan yang berlokasi di Kelurahan Sungai Nangka, Kecamatan Balikpapan Selatan, Kota Balikpapan, Kalimantan Timur.
+          Berdiri sejak tahun 2018 dengan lingkup layanan meliputi IT solution, pengadaan barang & jasa di bidang teknologi.
+        </p>
+
+        <h2>Visi</h2>
+        <p class="section-lead">
+          Menjadi perusahaan pengadaan dan perawatan teknologi yang terkemuka di Balikpapan, dan juga seluruh Indonesia.
+        </p>
+
+        <h2>Misi</h2>
+        <ul class="section-lead">
+          <li>Mengembangkan product IT yang berkualitas dan kompetitif</li>
+          <li>Memberikan servis yang profesional kepada mitra</li>
+          <li>Mengembangkan kemitraan yang saling menguntungkan</li>
+          <li>Mengembangkan inovasi terbaik dan terkini dalam setiap produk</li>
+          <li>Meningkatkan benefit dan nilai tambah bagi mitra</li>
+        </ul>
+      
+
+      <div class="about-image">
+        <img src="/static/img/kantor-mahkota.webp" alt="Kantor Mahkota Technology">
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Layanan -->
+  <section class="layanan" id="layanan">
+    <div class="section-inner">
+      <p class="section-label">Layanan</p>
+      <h2>Layanan Kami Hadir Untuk Membantu Anda.</h2>
+      <p></p>
+
+      <div class="about-grid">
+        <div class="about-item">
+          <span class="about-mark"></span>
+          <h3>Pemeliharaan & Maintenance</h3>
+          <p>Memelihara dan Merawat perangkat anda secara berkala guna mencegah kerusakan dan membuat pemakaian menjadi nyaman.</p>
+        </div>
+        <div class="about-item">
+          <span class="about-mark"></span>
+          <h3>Troubleshoot</h3>
+          <p>Menangani masalah pada sistem CCTV dan server serta jaringan Anda.</p>
+        </div>
+        <div class="about-item">
+          <span class="about-mark"></span>
+          <h3>Pengadaan</h3>
+          <p>Mengelola proses untuk memperoleh Barang yang Anda butuhkan.</p>
+        </div>
+        <div class="about-item">
+          <span class="about-mark"></span>
+          <h3>Service Perangkat</h3>
+          <p>Memperbaiki masalah anda terkait perangkat anda.</p>
+        </div>
+      </div>
+      <p class="section-lead"><i>*untuk info dan pertanyaan lebih lanjut hubungi contact person kami.</i></p>
+    </div>
+  </section>
+
+  <!-- GALERY -->
+  <section class="galery" id="galery">
+    <div class="section-inner">
+      <p class="section-label">Galery</p>
+      <h2>Cuplikan pekerjaan.</h2>
+
+      <div class="galery-grid" id="galeryGrid">
+        <!-- diisi oleh JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT PERSON -->
+  <section class="contact-person" id="contact-person">
+    <div class="section-inner">
+      <p class="section-label">Contact Us</p>
+      <h2>Hubungi kontak kami yang menangani masalah Anda.</h2>
+
+      <div class="cp-grid" id="cpGrid">
+        <!-- diisi oleh JS dari data backend -->
+      </div>
+    </div>
+  </section>
+
+  <!-- INFO -->
+
+</main>
+
+<footer class="site-footer">
+  <div class="section-inner footer-inner">
+    <span>&copy; <span id="year"></span> Mahkota Technology. Seluruh hak cipta dilindungi.</span>
+    </div>
+</footer>
+
+<script src="/static/js/main.js"></script>
+</body>
+</html>
