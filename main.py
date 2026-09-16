@@ -39,11 +39,13 @@ CONTACT_PERSONS = [
         "role": "Mahkota Technology",
         "phone": "+62 813 4877 1000 (Rahmad Kurniawan)",
         "photo": "/static/img/wa1.webp",
+        "whatsapp": "https://wa.me/6281348771000",
     },
+
     {
         "name": "Address",
         "role": "Mahkota Technology",
-        "email": "Jl. Marsma R Iswahyudi, RT 06, NO. 12, Kel. Sungai Nangka, Kec. Balikpapan Selatan, Kota Balikpapan, Kalimantan Timur",
+        "email": "Jl. Marsma R Iswahyudi, RT 06, NO. 12, Kel. Sungai Nangka, Kec. Balikpapan Selatan, Kota Balikpapan",
         "photo": "/static/img/map1.webp",
     }
 ]

@@ -103,16 +103,28 @@ async function loadContactPersons() {
     const res = await fetch('/api/contact-persons');
     if (!res.ok) throw new Error('Gagal memuat data');
     const data = await res.json();
-
-    grid.innerHTML = data.map(cp => `
-      <div class="cp-card">
-        <img class="cp-avatar" src="${escapeHtml(cp.photo)}" alt="${escapeHtml(cp.name)}" onerror="this.src='/static/img/placeholder.jpg'">
-        <h3>${escapeHtml(cp.name)}</h3>
-        <p class="cp-role">${escapeHtml(cp.role)}</p>
-        <p class="cp-detail">${escapeHtml(cp.email)}</p>
-        <p class="cp-detail">${escapeHtml(cp.phone)}</p>
-      </div>
-    `).join('');
+ 
+    grid.innerHTML = data.map(cp => {
+      let actionBtn = '';
+      if (cp.whatsapp) {
+        actionBtn = `<a href="${escapeHtml(cp.whatsapp)}" target="_blank" rel="noopener noreferrer" class="cp-btn cp-btn-wa">Chat WhatsApp</a>`;
+      } else if (cp.maps) {
+        actionBtn = `<a href="${escapeHtml(cp.maps)}" target="_blank" rel="noopener noreferrer" class="cp-btn cp-btn-maps">Buka Maps</a>`;
+      } else if (cp.email) {
+        actionBtn = `<a href="mailto:${escapeHtml(cp.email)}" class="cp-btn cp-btn-mail">Kirim Email</a>`;
+      }
+ 
+      return `
+        <div class="cp-card">
+          <img class="cp-avatar" src="${escapeHtml(cp.photo)}" alt="${escapeHtml(cp.name)}" onerror="this.src='/static/img/placeholder.jpg'">
+          <h3>${escapeHtml(cp.name)}</h3>
+          <p class="cp-role">${escapeHtml(cp.role)}</p>
+          ${cp.email ? `<p class="cp-detail">${escapeHtml(cp.email)}</p>` : ''}
+          ${cp.phone ? `<p class="cp-detail">${escapeHtml(cp.phone)}</p>` : ''}
+          ${actionBtn ? `<div class="cp-actions">${actionBtn}</div>` : ''}
+        </div>
+      `;
+    }).join('');
   } catch (err) {
     grid.innerHTML = `<p class="cp-detail">Tidak dapat memuat data contact person saat ini.</p>`;
     console.error(err);
