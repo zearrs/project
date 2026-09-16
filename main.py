@@ -33,6 +33,7 @@ CONTACT_PERSONS = [
         "role": "Mahkota Technology",
         "email": "putramahkotatechnology@gmail.com",
         "photo": "/static/img/gmail.webp",
+        "gmail": "rakaganteng1221@gmail.com",
     },
     {
         "name": "WhatsApp",
@@ -47,19 +48,52 @@ CONTACT_PERSONS = [
         "role": "Mahkota Technology",
         "email": "Jl. Marsma R Iswahyudi, RT 06, NO. 12, Kel. Sungai Nangka, Kec. Balikpapan Selatan, Kota Balikpapan",
         "photo": "/static/img/map1.webp",
+        "maps": "https://www.google.com/maps/place/MAHKOTA+TECHNOLOGY/@-1.2682165,116.87583,17z/data=!4m6!3m5!1s0x2df14773dbc43043:0x3a581d3e952310c4!8m2!3d-1.2682138!4d116.8774089!16s%2Fg%2F11qydf4vqd?entry=ttu&g_ep=EgoyMDI2MDkxMy4wIKXMDSoASAFQAw%3D%3D",
     }
 ]
 
-GALERY_ITEMS = [
-    {"title": "Implementasi Sistem ERP - PT Sinar Abadi"},
-    {"title": "Migrasi Infrastruktur Cloud - Klien Ritel"},
-    {"title": "Pengembangan Aplikasi Internal - Sektor Logistik"},
-    {"title": "Audit Keamanan Jaringan - Klien Perbankan"},
-    {"title": "Dashboard Analitik Real-time"},
-    {"title": "Setup Data Center Regional"},
-    {"title": "Setup Data Center Regional"},
-    {"title": "Setup Data Center Regional"}
-]
+GALERY_ITEMS = {
+    "2026": [
+        {"title": "Implementasi Sistem ERP - Dinas Kesehatan Kota Balikpapan"},
+        {"title": "Migrasi Infrastruktur Cloud - Puskesmas Sumber Rejo Balikpapan"},
+        {"title": "Pengembangan Aplikasi Internal - Puskesmas Klandasan Balikpapan"},
+        {"title": "Audit Keamanan Jaringan - Kelurahan Gunung Samarinda Baru"},
+        {"title": "Dashboard Analitik - Kelurahan Gunung Samarinda Baru"},
+        {"title": "Setup Data Center Regional - Kelurahan Sungai Nangka"},
+        {"title": "Setup Data Center Regional - Kelurahan Sungai Nangka"},
+        {"title": "Setup Data Center Regional - Kelurahan Sungai Nangka"},
+    ],
+    "2025": [
+        {"title": "Implementasi Sistem ERP - Dinas Kesehatan Kota Balikpapan"},
+        {"title": "Migrasi Infrastruktur Cloud - Puskesmas Sumber Rejo Balikpapan"},
+        {"title": "Pengembangan Aplikasi Internal - Puskesmas Klandasan Balikpapan"},
+        {"title": "Audit Keamanan Jaringan - Kelurahan Gunung Samarinda Baru"},
+        {"title": "Dashboard Analitik - Kelurahan Gunung Samarinda Baru"},
+        {"title": "Setup Data Center Regional - Kelurahan Sungai Nangka"},
+        {"title": "Setup Data Center Regional - Kelurahan Sungai Nangka"},
+        {"title": "Setup Data Center Regional - Kelurahan Sungai Nangka"},
+    ],
+    "2024": [
+        {"title": "Setup Data Center Regional - Kelurahan Sungai Nangka"},
+        {"title": "Setup Data Center Regional - Kelurahan Sungai Nangka"},
+        {"title": "Setup Data Center Regional - Kelurahan Sungai Nangka"},
+        {"title": "Setup Data Center Regional - Kelurahan Sungai Nangka"},
+        {"title": "Setup Data Center Regional - Kelurahan Sungai Nangka"},
+        {"title": "Setup Data Center Regional - Kelurahan Sungai Nangka"},
+        {"title": "Kerja sama 1 - 2024"},
+        {"title": "Kerja sama 2 - 2024"},
+    ],
+    "2023": [
+        {"title": "Setup Data Center Regional - Kelurahan Sungai Nangka"},
+        {"title": "Setup Data Center Regional - Kelurahan Sungai Nangka"},
+        {"title": "Setup Data Center Regional - Kelurahan Sungai Nangka"},
+        {"title": "Setup Data Center Regional - Kelurahan Sungai Nangka"},
+        {"title": "Setup Data Center Regional - Kelurahan Sungai Nangka"},
+        {"title": "Setup Data Center Regional - Kelurahan Sungai Nangka"},
+        {"title": "Setup Data Center Regional - Kelurahan Sungai Nangka"},
+        {"title": "Kerja sama 1 - 2023"},
+    ],
+}
 
 # ==============================================
 # ROUTES - HALAMAN

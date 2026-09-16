@@ -50,49 +50,62 @@ function initScrollSpy() {
 /* =========================================
    HERO TERMINAL TYPING EFFECT
 ========================================= */
+/* =========================================
+   HERO TERMINAL — ASCII ART STATIS
+========================================= */
+const ASCII_ART = `
+                                                                                                    
+                                   +#*               ##                                             
+                                    *#  ###  ## *##  #*## +**##                                     
+                          *#%#  *    %###   *%   #% *#%      +%                                     
+                            ##*+##   *% ##   %*  ## ###  #%*#%#                                     
+                             ##  #%   %#  ##  ###    ### ####%     ##                               
+                       ####   %#  #%# # - -=========-=-----  %     #%###                            
+                *    ### ###  #%#  -====----:::::::::::---===---- #####*###                         
+               ###      ## ##* --=---::::::--------:----:::::---=--- ########                       
+                #*%#    %%#  ---:::::    ::----------------------:-==-- ###%##*                     
+            #    ####%#*  ----::::::      :---------------------------====+######      -=====-      
+          *###%%#*## *# ---::::----:      :-----=-------=--------------=+++ ######    -+*####+=-    
+             ###  ##  ----:::-------:: :::------===========-==-----======+**+ #####  :=*#%%%%#+=    
+               ###*  ----::-----------:----------============-    --======+*** ##### :=*#%%%##+=    
+                 ## ----:-------------------------=========-=      -=++++++*###*###%##-=+***+=-     
+                  ---------------------------------=--=======-:   :-=++++++*#####*#####  ---:       
+        *%%%#    ----==---------------:--------------=========----=+++*+++**#%%%%# %####   -        
+        ## ###%# -=====---------------:----:---------=======++++++++*******+#%%%%%%#####* =         
+        ## ## # ====++=--------------- -:------------======+++++++**********%#%%%%%%##%## =         
+       *+  *## ++++++++=-------------   ---------========+++++++***********#%%%#%%%%#     =         
+       #      ++******+++======------------==========+++++++++***********##%%%%%%%%%%    +          
+      #%%%%###************=+==========-=========++++++++**************###%%%%%%%%%%%%%   +          
+            * *******###***=--===+++==-===++++++++++***************#####%%%%%%%%@@%%%%  +           
+     +#    ## ##########**     -=+++++++++++++++****************######%%%%%%%%@%@@@@%%  *           
+    %%%%%%%%# ##########*=     -=+***++=+++******************######%%%%%%%%%%%@@@@@@@% **           
+              ###########*     +**************************########%%%%%%%%%%@@@@@@@@@% *            
+       +##%%# ###########*#******###********************#########%%%%%%%%%@@@@@@@@@@@%*             
+      #    #* #%%%%%%%###########*######*+#**********############%%%%%%%%@@@@@@@@@@@%*              
+        *####%%%%%%%%%############*######+*#**********##########%%%%%%%%@@@@@@@@@@@%#*              
+      ##%%#   %%%%%%%##%############*#####**##********##########%%%%%%%@@@@@@@@@@@@###              
+              #%%%%%##%%%############**####**##*******##########%%%%%%%@@@@@@@@@@##%@               
+     #%###     #%%%%#%%%%##############*****+++*********#########%%%%%%%@@@@@@@%*#@@                
+     ##   #  +#*%%%%%%%%#############****+-   :-=+************######%%%%%%%@@%=#%@@%                
+     ###%#%%###* %%%%%%#########********+=-     -====++++++*******#######%%%#**%@@@                 
+      ##%         #%%%%######*******++++=--    .:--------===++++*****#####+**%@@@@                  
+                  #%%%%#####*****++++===---:::::::::::-------==+++*********#%@@@%                   
+                    %@@%%####****+++===-----:::: ::::::::-----==++*** +**%%@@@@@                    
+                     %@@@%%####****+++==-----::::.::::::------==+  +++*%%@@@@@                      
+                       @@@@%%%####****+++==-------:-------=== ===++%%#%%@@@@%                       
+                         @@@@@%%%####*****+++=====------  -=====#%%%@@@@@@@                         
+                           @@@@@%%%%%####**++=    :-:-----  ##%%%@@@@@@@%                           
+                                    ......::::::::::   ####%%%@@@@@@@@@                             
+                                    ..           #####%*#%%@@@@@@@@                                 
+                                       %%%%%%@@@%%%%%@@@%%@@@@@                                     
+                                         @@@%@@@@@@@@@%%%%                                          
+`;
+
 function typeTerminal() {
   const el = document.getElementById('terminalBody');
-  const lines = [
-    { prompt: '$ ', text: 'nexora deploy --env production', delay: 35 },
-    { prompt: '', text: '✓ Build berhasil (12.4s)', delay: 15 },
-    { prompt: '', text: '✓ Sistem aktif di 3 region', delay: 15 },
-    { prompt: '$ ', text: 'nexora status', delay: 35 },
-    { prompt: '', text: 'Uptime: 99.98%  |  Latency: 42ms', delay: 15 },
-  ];
-
-  let lineIndex = 0;
-  let charIndex = 0;
-  el.textContent = '';
-
-  function typeNextChar() {
-    if (lineIndex >= lines.length) {
-      el.insertAdjacentHTML('beforeend', '<span class="cursor"></span>');
-      return;
-    }
-
-    const current = lines[lineIndex];
-
-    if (charIndex === 0) {
-      const promptSpan = document.createElement('span');
-      promptSpan.className = 'prompt';
-      promptSpan.textContent = current.prompt;
-      el.appendChild(promptSpan);
-    }
-
-    if (charIndex < current.text.length) {
-      el.appendChild(document.createTextNode(current.text[charIndex]));
-      charIndex++;
-      setTimeout(typeNextChar, current.delay);
-    } else {
-      el.appendChild(document.createElement('br'));
-      lineIndex++;
-      charIndex = 0;
-      setTimeout(typeNextChar, 300);
-    }
-  }
-
-  typeNextChar();
+  el.textContent = ASCII_ART;
 }
+
 
 /* =========================================
    LOAD DATA FROM BACKEND (FastAPI)
@@ -110,9 +123,14 @@ async function loadContactPersons() {
         actionBtn = `<a href="${escapeHtml(cp.whatsapp)}" target="_blank" rel="noopener noreferrer" class="cp-btn cp-btn-wa">Chat WhatsApp</a>`;
       } else if (cp.maps) {
         actionBtn = `<a href="${escapeHtml(cp.maps)}" target="_blank" rel="noopener noreferrer" class="cp-btn cp-btn-maps">Buka Maps</a>`;
-      } else if (cp.email) {
-        actionBtn = `<a href="mailto:${escapeHtml(cp.email)}" class="cp-btn cp-btn-mail">Kirim Email</a>`;
-      }
+      } else if (cp.gmail) {
+  actionBtn = `<a href="https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(cp.gmail)}"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="cp-btn cp-btn-mail">
+    Kirim Email
+  </a>`;
+}
  
       return `
         <div class="cp-card">
@@ -131,23 +149,55 @@ async function loadContactPersons() {
   }
 }
 
+let galeryData = {};
+let activeYear = null;
+
 async function loadGalery() {
-  const grid = document.getElementById('galeryGrid');
+  const tabsEl = document.getElementById('galeryTabs');
+  const gridEl = document.getElementById('galeryGrid');
+
   try {
     const res = await fetch('/api/galery');
     if (!res.ok) throw new Error('Gagal memuat data');
-    const data = await res.json();
+    galeryData = await res.json();
 
-    grid.innerHTML = data.map(item => `
-      <div class="galery-item">
-        <span>${escapeHtml(item.title)}</span>
-      </div>
+    const years = Object.keys(galeryData).sort((a, b) => b - a); // terbaru dulu
+    activeYear = years[0];
+
+    tabsEl.innerHTML = years.map(year => `
+      <button class="galery-tab ${year === activeYear ? 'active' : ''}" data-year="${year}">
+        ${year}
+      </button>
     `).join('');
+
+    renderGaleryGrid(activeYear);
+
+    tabsEl.querySelectorAll('.galery-tab').forEach(btn => {
+      btn.addEventListener('click', () => {
+        activeYear = btn.dataset.year;
+        tabsEl.querySelectorAll('.galery-tab').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        renderGaleryGrid(activeYear);
+      });
+    });
+
   } catch (err) {
-    grid.innerHTML = `<p class="cp-detail">Tidak dapat memuat galeri saat ini.</p>`;
+    gridEl.innerHTML = `<p class="cp-detail">Tidak dapat memuat galeri saat ini.</p>`;
     console.error(err);
   }
 }
+
+function renderGaleryGrid(year) {
+  const gridEl = document.getElementById('galeryGrid');
+  const items = galeryData[year] || [];
+
+  gridEl.innerHTML = items.map(item => `
+    <div class="galery-item">
+      <span>${escapeHtml(item.title)}</span>
+    </div>
+  `).join('');
+}
+
 
 /* =========================================
    CONTACT / INFO FORM SUBMIT

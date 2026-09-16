@@ -100,9 +100,11 @@ a { color: inherit; text-decoration: none; }
   font-weight: 600;
 }
 
-.brand-mark {
-  color: var(--accent-bright);
-  font-weight: 700;
+.brand-mark img {
+  height: 32px;
+  width: auto;
+  object-fit: contain;
+  display: block;
 }
 
 .brand-dot { color: var(--accent-bright); }
@@ -254,11 +256,13 @@ a { color: inherit; text-decoration: none; }
 
 .terminal-body {
   padding: 22px 20px;
-  font-family: 'Space Grotesk', monospace;
-  font-size: 0.88rem;
+  font-family: 'Courier New', monospace;
+  font-size: 0.5rem;
+  line-height: 1.1;
   color: #A8C6F0;
   min-height: 220px;
-  white-space: pre-wrap;
+  white-space: pre;
+  overflow-x: auto;
 }
 
 .terminal-body .prompt { color: var(--accent-bright); }
@@ -458,6 +462,7 @@ a { color: inherit; text-decoration: none; }
   gap: 20px;
 }
 
+
 .galery-item {
   aspect-ratio: 4 / 3;
   border-radius: var(--radius-md);
@@ -477,6 +482,38 @@ a { color: inherit; text-decoration: none; }
   position: relative;
   z-index: 1;
 }
+
+.galery-tabs {
+  display: flex;
+  gap: 10px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.galery-tab {
+  padding: 10px 20px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--panel-border);
+  background: transparent;
+  color: var(--text-dim);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.galery-tab:hover {
+  border-color: var(--accent-bright);
+  color: var(--text);
+}
+
+.galery-tab.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
 
 /* =========================================
    INFO

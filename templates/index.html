@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mahkota Technology </title>
+<link rel="icon" type="image/webp" href="/static/img/icon.webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/static/css/style.css">
@@ -13,7 +14,7 @@
 <header class="site-header" id="top">
   <div class="header-inner">
     <a href="#top" class="brand">
-      <span class="brand-mark"></span>
+      <span class="brand-mark"><img class="logo" src="/static/img/icon.webp" alt="logo"></span>
       <span class="brand-name">MAHKOTA<span class="brand-dot"> </span>TECHNOLOGY</span>
     </a>
 
@@ -131,16 +132,20 @@
   </section>
 
   <!-- GALERY -->
-  <section class="galery" id="galery">
-    <div class="section-inner">
-      <p class="section-label">Galery</p>
-      <h2>Cuplikan pekerjaan.</h2>
+<section class="galery" id="galery">
+  <div class="section-inner">
+    <p class="section-label">Galery</p>
+    <h2>Dokumentasi kerja sama kami.</h2>
 
-      <div class="galery-grid" id="galeryGrid">
-        <!-- diisi oleh JS -->
-      </div>
+    <div class="galery-tabs" id="galeryTabs">
+      <!-- diisi JS: tombol tahun -->
     </div>
-  </section>
+
+    <div class="galery-grid" id="galeryGrid">
+      <!-- diisi JS: item sesuai tahun terpilih -->
+    </div>
+  </div>
+</section>
 
   <!-- CONTACT PERSON -->
   <section class="contact-person" id="contact-person">
