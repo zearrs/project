@@ -7,7 +7,7 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent
 
-app = FastAPI(title="Nexora Systems - Company Profile")
+app = FastAPI(title="Mahkota Technologys")
 
 # Serve file statis (css, js, gambar)
 app.mount("/static", StaticFiles(directory=BASE_DIR / "static"), name="static")
