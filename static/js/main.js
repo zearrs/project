@@ -203,10 +203,11 @@ function renderGaleryGrid(year) {
 
   gridEl.innerHTML = items.map(item => `
     <div class="galery-item">
+      <img src="${escapeHtml(item.photo)}" alt="${escapeHtml(item.title)}" onerror="this.src='/static/img/dokumentasi/placeholder.jpg'">
       <span>${escapeHtml(item.title)}</span>
     </div>
   `).join('');
-}
+  }
 
 
 /* =========================================

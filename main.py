@@ -54,7 +54,11 @@ CONTACT_PERSONS = [
 
 GALERY_ITEMS = {
     "2026": [
-        {"title": "Implementasi Sistem ERP - Dinas Kesehatan Kota Balikpapan"},
+        {""
+        "title": "Implementasi Sistem ERP - Dinas Kesehatan Kota Balikpapan",
+        "photo": "/static/img/dokumentasi/icon.webp"
+         },
+         
         {"title": "Migrasi Infrastruktur Cloud - Puskesmas Sumber Rejo Balikpapan"},
         {"title": "Pengembangan Aplikasi Internal - Puskesmas Klandasan Balikpapan"},
         {"title": "Audit Keamanan Jaringan - Kelurahan Gunung Samarinda Baru"},
