@@ -54,48 +54,173 @@ CONTACT_PERSONS = [
 
 GALERY_ITEMS = {
     "2026": [
-        {""
+        {
         "title": "Implementasi Sistem ERP - Dinas Kesehatan Kota Balikpapan",
         "photo": "/static/img/dokumentasi/icon.webp"
          },
          
-        {"title": "Migrasi Infrastruktur Cloud - Puskesmas Sumber Rejo Balikpapan"},
-        {"title": "Pengembangan Aplikasi Internal - Puskesmas Klandasan Balikpapan"},
-        {"title": "Audit Keamanan Jaringan - Kelurahan Gunung Samarinda Baru"},
-        {"title": "Dashboard Analitik - Kelurahan Gunung Samarinda Baru"},
-        {"title": "Setup Data Center Regional - Kelurahan Sungai Nangka"},
-        {"title": "Setup Data Center Regional - Kelurahan Sungai Nangka"},
-        {"title": "Setup Data Center Regional - Kelurahan Sungai Nangka"},
+        {
+        "title": "Migrasi Infrastruktur Cloud - Puskesmas Sumber Rejo Balikpapan",
+        "photo": "/static/img/dokumentasi/icon.webp"
+    
+        },
+        {
+        "title": "Migrasi Infrastruktur Cloud - Puskesmas Sumber Rejo Balikpapan",
+        "photo": "/static/img/dokumentasi/icon.webp"
+    
+        },
+        {
+        "title": "Migrasi Infrastruktur Cloud - Puskesmas Sumber Rejo Balikpapan",
+        "photo": "/static/img/dokumentasi/icon.webp"
+    
+        },
+        {
+        "title": "Migrasi Infrastruktur Cloud - Puskesmas Sumber Rejo Balikpapan",
+        "photo": "/static/img/dokumentasi/icon.webp"
+    
+        },
+        {
+        "title": "Migrasi Infrastruktur Cloud - Puskesmas Sumber Rejo Balikpapan",
+        "photo": "/static/img/dokumentasi/icon.webp"
+    
+        },
+        {
+        "title": "Migrasi Infrastruktur Cloud - Puskesmas Sumber Rejo Balikpapan",
+        "photo": "/static/img/dokumentasi/icon.webp"
+    
+        },
+        {
+        "title": "Migrasi Infrastruktur Cloud - Puskesmas Sumber Rejo Balikpapan",
+        "photo": "/static/img/dokumentasi/icon.webp"
+    
+        },
     ],
     "2025": [
-        {"title": "Implementasi Sistem ERP - Dinas Kesehatan Kota Balikpapan"},
-        {"title": "Migrasi Infrastruktur Cloud - Puskesmas Sumber Rejo Balikpapan"},
-        {"title": "Pengembangan Aplikasi Internal - Puskesmas Klandasan Balikpapan"},
-        {"title": "Audit Keamanan Jaringan - Kelurahan Gunung Samarinda Baru"},
-        {"title": "Dashboard Analitik - Kelurahan Gunung Samarinda Baru"},
-        {"title": "Setup Data Center Regional - Kelurahan Sungai Nangka"},
-        {"title": "Setup Data Center Regional - Kelurahan Sungai Nangka"},
-        {"title": "Setup Data Center Regional - Kelurahan Sungai Nangka"},
+        {
+        "title": "Implementasi Sistem ERP - Dinas Kesehatan Kota Balikpapan",
+        "photo": "/static/img/dokumentasi/icon.webp"
+         },
+         
+        {
+        "title": "Migrasi Infrastruktur Cloud - Puskesmas Sumber Rejo Balikpapan",
+        "photo": "/static/img/dokumentasi/icon.webp"
+    
+        },
+        {
+        "title": "Migrasi Infrastruktur Cloud - Puskesmas Sumber Rejo Balikpapan",
+        "photo": "/static/img/dokumentasi/icon.webp"
+    
+        },
+        {
+        "title": "Migrasi Infrastruktur Cloud - Puskesmas Sumber Rejo Balikpapan",
+        "photo": "/static/img/dokumentasi/icon.webp"
+    
+        },
+        {
+        "title": "Migrasi Infrastruktur Cloud - Puskesmas Sumber Rejo Balikpapan",
+        "photo": "/static/img/dokumentasi/icon.webp"
+    
+        },
+        {
+        "title": "Migrasi Infrastruktur Cloud - Puskesmas Sumber Rejo Balikpapan",
+        "photo": "/static/img/dokumentasi/icon.webp"
+    
+        },
+        {
+        "title": "Migrasi Infrastruktur Cloud - Puskesmas Sumber Rejo Balikpapan",
+        "photo": "/static/img/dokumentasi/icon.webp"
+    
+        },
+        {
+        "title": "Migrasi Infrastruktur Cloud - Puskesmas Sumber Rejo Balikpapan",
+        "photo": "/static/img/dokumentasi/icon.webp"
+    
+        },
     ],
+
     "2024": [
-        {"title": "Setup Data Center Regional - Kelurahan Sungai Nangka"},
-        {"title": "Setup Data Center Regional - Kelurahan Sungai Nangka"},
-        {"title": "Setup Data Center Regional - Kelurahan Sungai Nangka"},
-        {"title": "Setup Data Center Regional - Kelurahan Sungai Nangka"},
-        {"title": "Setup Data Center Regional - Kelurahan Sungai Nangka"},
-        {"title": "Setup Data Center Regional - Kelurahan Sungai Nangka"},
-        {"title": "Kerja sama 1 - 2024"},
-        {"title": "Kerja sama 2 - 2024"},
+        {
+        "title": "Implementasi Sistem ERP - Dinas Kesehatan Kota Balikpapan",
+        "photo": "/static/img/dokumentasi/icon.webp"
+         },
+         
+        {
+        "title": "Migrasi Infrastruktur Cloud - Puskesmas Sumber Rejo Balikpapan",
+        "photo": "/static/img/dokumentasi/icon.webp"
+    
+        },
+        {
+        "title": "Migrasi Infrastruktur Cloud - Puskesmas Sumber Rejo Balikpapan",
+        "photo": "/static/img/dokumentasi/icon.webp"
+    
+        },
+        {
+        "title": "Migrasi Infrastruktur Cloud - Puskesmas Sumber Rejo Balikpapan",
+        "photo": "/static/img/dokumentasi/icon.webp"
+    
+        },
+        {
+        "title": "Migrasi Infrastruktur Cloud - Puskesmas Sumber Rejo Balikpapan",
+        "photo": "/static/img/dokumentasi/icon.webp"
+    
+        },
+        {
+        "title": "Migrasi Infrastruktur Cloud - Puskesmas Sumber Rejo Balikpapan",
+        "photo": "/static/img/dokumentasi/icon.webp"
+    
+        },
+        {
+        "title": "Migrasi Infrastruktur Cloud - Puskesmas Sumber Rejo Balikpapan",
+        "photo": "/static/img/dokumentasi/icon.webp"
+    
+        },
+        {
+        "title": "Migrasi Infrastruktur Cloud - Puskesmas Sumber Rejo Balikpapan",
+        "photo": "/static/img/dokumentasi/icon.webp"
+    
+        },
     ],
     "2023": [
-        {"title": "Setup Data Center Regional - Kelurahan Sungai Nangka"},
-        {"title": "Setup Data Center Regional - Kelurahan Sungai Nangka"},
-        {"title": "Setup Data Center Regional - Kelurahan Sungai Nangka"},
-        {"title": "Setup Data Center Regional - Kelurahan Sungai Nangka"},
-        {"title": "Setup Data Center Regional - Kelurahan Sungai Nangka"},
-        {"title": "Setup Data Center Regional - Kelurahan Sungai Nangka"},
-        {"title": "Setup Data Center Regional - Kelurahan Sungai Nangka"},
-        {"title": "Kerja sama 1 - 2023"},
+        {
+        "title": "Implementasi Sistem ERP - Dinas Kesehatan Kota Balikpapan",
+        "photo": "/static/img/dokumentasi/icon.webp"
+         },
+         
+        {
+        "title": "Migrasi Infrastruktur Cloud - Puskesmas Sumber Rejo Balikpapan",
+        "photo": "/static/img/dokumentasi/icon.webp"
+    
+        },
+        {
+        "title": "Migrasi Infrastruktur Cloud - Puskesmas Sumber Rejo Balikpapan",
+        "photo": "/static/img/dokumentasi/icon.webp"
+    
+        },
+        {
+        "title": "Migrasi Infrastruktur Cloud - Puskesmas Sumber Rejo Balikpapan",
+        "photo": "/static/img/dokumentasi/icon.webp"
+    
+        },
+        {
+        "title": "Migrasi Infrastruktur Cloud - Puskesmas Sumber Rejo Balikpapan",
+        "photo": "/static/img/dokumentasi/icon.webp"
+    
+        },
+        {
+        "title": "Migrasi Infrastruktur Cloud - Puskesmas Sumber Rejo Balikpapan",
+        "photo": "/static/img/dokumentasi/icon.webp"
+    
+        },
+        {
+        "title": "Migrasi Infrastruktur Cloud - Puskesmas Sumber Rejo Balikpapan",
+        "photo": "/static/img/dokumentasi/icon.webp"
+    
+        },
+        {
+        "title": "Migrasi Infrastruktur Cloud - Puskesmas Sumber Rejo Balikpapan",
+        "photo": "/static/img/dokumentasi/icon.webp"
+    
+        },
     ],
 }
 
